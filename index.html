@@ -208,7 +208,7 @@
 
         <section id="values">
           <div class="container">
-            <div class="row">
+            <div class="row values__row">
               <div class="values__description">
           
           <h3 class="values__small--title">VALUES</h3>
@@ -221,22 +221,22 @@
             <div class="values__list">
               <div class="value">
                 <div class="value__title">
-                <figure class="value__img--wrapper">
-                      <!-- TO GET THIS ICON GO TO https://feathericons.com -->
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+                <figure class="value__img--wrapper-a">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(39, 103, 73, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img--a">
                         <line x1="12" y1="1" x2="12" y2="23"></line>
                         <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
                       </svg>
                     </figure>
                     <div class="value__name">Affordable</div>
                 </div>
+                <div class="value__para--section">
                    <p class="value__para">We promise to offer you the best rate we can - at par with the industry standards.</p>
-             </div>
+                </div>
+                  </div>
           <div class="value">
             <div class="value__title">
-            <figure class="value__img--wrapper">
-                      <!-- TO GET THIS ICON GO TO https://feathericons.com -->
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img">
+            <figure class="value__img--wrapper-p">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="rgba(155, 44, 44, 1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="value__img--p">
                         <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
                         <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
                       </svg>
@@ -245,22 +245,87 @@
             </div> 
             <p class="value__para">We assure you that our templates are designed and created by professional designers.</p>
           </div>
-             
+        </div>
+        <button class="btn__input btn__input--primary">Learn More</button>
              </div>
-            <figure>
-                <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" alt="">
-            </figure>
+             <div class="values__wrapper">
+            <figure class="values__img--wrapper">
+                <img src="./assets/prototype-illustration.21bc4b3f612a2f257c3d361067582485.svg" class="values__img" alt="">
+              </figure>
             </div>
+            </div>
+            </div>
+          </div>
           </div>
         </section>
 
 
         <section id="pricing">
-            <h1>PRICING</h1>
+          <div class="container">
+            <div class="row pricing__row">
+              <div class="pricing__description">
+            <h3 class="pricing__small--title">PRICING</h3>
               <h2>Reasonable & Flexible <span class="purple">Plans.</span></h2>
-                <div>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                 <p class="pricing__para">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <div class="plans">
+                <div class="personal__wrapper">
+                <div class="plan__strip--green"></div>
+                <div class="plan__top">
+                  <div class="plan__name">PERSONAL</div>
+                  <div class="plan__price">$17.99</div>
+                  <div class="plan__duration">MONTHLY</div>
                 </div>
+                <div class="personal__middle">
+                  <div class="plan__target">For Individuals</div>
+                  <p class="plan__feature">30 Templates</p>
+                  <p class="plan__feature">7 Landing Pages</p>
+                  <p class="plan__feature">12 Internal Pages</p>
+                  <p class="plan__feature">Basic Assistance</p>
+                </div>
+                <div class="personal__bottom">
+                  <button class="plan__button">BUY NOW</button>
+                </div>
+                </div>
+                <div class="business__wrapper">
+                <div class="plan__top">
+                  <div class="plan__name">BUSINESS</div>
+                  <div class="plan__price">$37.99</div>
+                  <div class="plan__duration">MONTHLY</div>
+                </div>
+                <div class="personal__middle">
+                  <div class="plan__target">For Small Businesses</div>
+                  <p class="plan__feature">60 Templates</p>
+                  <p class="plan__feature">15 Landing Pages</p>
+                  <p class="plan__feature">22 Internal Pages</p>
+                  <p class="plan__feature">Priority Assistance</p>
+                </div>
+                <div class="personal__bottom">
+                  <button class="plan__button">BUY NOW</button>
+                </div>
+                </div>
+                <div class="surprise__wrapper">
+                <div class="plan__strip--red"></div>
+                <div class="plan__top">
+                  <div class="plan__name">SURPRISE</div>
+                  <div class="plan__price">$57.99</div>
+                  <div class="plan__duration">MONTHLY</div>
+                </div>
+                <div class="personal__middle">
+                  <div class="plan__target">For Large Companies</div>
+                  <p class="plan__feature">90 Templates</p>
+                  <p class="plan__feature">27 Landing Pages</p>
+                  <p class="plan__feature">37 Internal Pages</p>
+                  <p class="plan__feature">Personal Assistance</p>
+                </div>
+                <div class="personal__bottom">
+                  <button class="plan__button">BUY NOW</button>
+                </div>
+                </div>
+
+              </div>
+                </div>  
+            </div>    
+          </div>
         </section>
 
 
