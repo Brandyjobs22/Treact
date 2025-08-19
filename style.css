@@ -102,6 +102,11 @@ img {
     width: 100%;
 }
 
+button {
+    cursor: pointer;
+    border: none;
+}
+
 .nav__link,
 .nav__link--primary {
     margin-left: 16px;
@@ -136,14 +141,11 @@ img {
     color: white;
 }
 
-
-
 /* 
 
 LANDING
 
 */
-
 
 #landing {
     background-color: #fff;
@@ -587,13 +589,23 @@ PRICING
     padding: 32px 40px;
 }
 
+.pricing__small--title {
+    padding-bottom: 40px;
+    font-size: 26px;
+    font-weight: 900;
+}
+
 .pricing__para {
-    max-width: 576px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     font-size: 18px;
     font-weight: 500px;
     color: #7c8ba1;
     line-height: 1.625;
+    padding: 0 260px;
+    padding-bottom: 40px;
 }
 
 .plans {
@@ -612,7 +624,44 @@ PRICING
     align-items: center;
     border: 2px solid #7c8ba1;
     padding: 100px ;
+    z-index: 2;
+    margin-right: 24px;
+    padding: 86px;
+    border-radius: 0.5rem;
 }
+.plan__strip--green,
+.plan__strip--blue,
+.plan__strip--red {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 174%;
+    height: 10px;
+    transform: translateY(-880%);
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+
+}
+
+.plan__strip--green,
+.plan:nth-child(1) .plan__stripe, .plan:nth-child(1) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__strip--blue,
+.plan:nth-child(2) .plan__stripe, .plan:nth-child(2) .plan__button {
+    color: #f7fafc;
+     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+}
+
+.plan__strip--red,
+.plan:nth-child(3) .plan__stripe, .plan:nth-child(3) .plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
+
 
 .plan__top, 
 .personal__middle,
@@ -633,12 +682,13 @@ PRICING
 .business__wrapper, 
 .enterprise__wrapper {
     margin-right: 24px;
+    padding: 86px;
+    border-radius: 0.5rem;
 }
 
 .business__wrapper {
     background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
     color: white;
-    border-radius: 10px;
 }
 
 
@@ -646,8 +696,9 @@ PRICING
 .plan__name{
     color: black;
     font-size: 24px;
-    font-weight: 700;
-    padding: 24px;
+    font-weight: bold;
+    padding-bottom: 9px;
+    line-height: 1px;
 }
 
 .business__plan--name {
@@ -673,10 +724,22 @@ PRICING
     letter-spacing: 1.6px;
 }
 
+.plan__duration {
+    color: #7c8ba1;
+}
+
+.personal__middle, 
+.enterprise__middle {
+    border-top: 2.5px solid #dcdfe4;
+    border-bottom: 2.5px solid #dcdfe4;
+    width: 173.5%;
+    padding: 24px;
+}
+
 .business__middle {
     border-top: 2px solid #418ce9;
     border-bottom: 2px solid #5daad7a8;
-    width: 212%;
+    width: 173.5%;
     padding: 24px;
 }
 
@@ -689,6 +752,10 @@ PRICING
     padding-top: 24px;
 }
 
+.plan__feature {
+    line-height: 60px;
+    font-size: 20px;
+}
 .business__plan--features {
     display: flex;
     flex-direction: column;
@@ -697,6 +764,36 @@ PRICING
     font-size: 20px;
     line-height: 60px;
 }
+
+.plan__button, .plan__button--primary,
+.plan__button--primary-second {
+    border: 2px solid #fff;
+    border-radius: 9999px;
+    letter-spacing: 0.05em;
+    padding: 10px 100px;
+    color: #fff;
+    font-weight: 700;
+    font-size:48px
+    width: 100%;
+    transform: translateY(40px);
+    transition: all 300ms ease;
+}
+
+.plan__button {
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56, 178, 172) 0%, rgb(129, 230, 217) 100%);
+}
+
+.plan__button--primary {
+    color: rgb(76, 81, 191);
+}
+
+.plan__button--primary-second {
+    border: 2px solid linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
+}
+
 
 
 
@@ -734,6 +831,10 @@ PRICING
         height: 5rem;
         width: 5rem;
         bottom: -50px;
+    }
+
+    .plan__button, .plan__button--primary {
+        max-width: none;
     }
 }
 
