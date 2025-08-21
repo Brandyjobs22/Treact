@@ -101,6 +101,7 @@ p {
 
 img {
     width: 100%;
+    
 }
 
 button {
@@ -567,8 +568,8 @@ VALUES
 }
 
 .values__img {
-    max-width: 100%;
-    height: auto;
+    height: 100%;
+    max-height: 100vh;
 }
 
 .btn__input--primary {
@@ -813,6 +814,87 @@ PRICING
     opacity: 0.25;
 }
 
+/* 
+TESTIMONIALS
+
+*/
+
+
+
+#testimonials {
+
+}
+
+
+
+.testimonials__wrapper {
+}
+
+
+
+
+.testimonials__description {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 64px;
+
+}
+
+
+
+.testimonials__img {
+    height: 100%;
+    max-height: 120vh;
+}
+
+.testimonials__small--title {
+    color: #6415ff;
+    font-weight: 900;
+    padding-bottom: 18px;
+    letter-spacing: 1.5px;
+}
+
+.testimonials__header {
+    font-size: 45px;
+    letter-spacing: 1.2px;
+    font-weight: 900;
+    transform: translateX(-4%);
+}
+
+.testimonial__rating {
+    color: rgb(246, 173, 85);
+    padding-top: 16px;
+    padding-bottom: 20px;
+}
+
+
+
+.testimonial__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.testimonial__details {
+    display: flex:
+}
+
+.testimonial__name
+
+.photo__img {
+    width: 10%;
+    height: 100%;
+    max-height: 10vh;
+    border-radius: 50%;
+}
+
+.testimonial__button {
+    width: 3%;
+    height: 10%;
+    max-height: 5vh;
+    color: #7c8ba1;
+}
 
 
 
