@@ -26,21 +26,27 @@
                 <li><a href="#" class="nav__link">Contact Us</a></li>
                 <li><a href="#" class="nav__link">Login</a></li>
                 <li><a href="#" class="nav__link nav__link--primary">Sign Up</a></li>
-            </ul class="menu__links">
-            <button class="btn__menu">
+            </ul>
+            <button class="btn__menu" onclick="openMenu()">
               <i class="fas fa-bars"></i>
             </button>
             <div class="menu__backdrop">
-              <button class="btn__menu btn__menu--close">
+              <button class="btn__menu btn__menu--close" onclick="closeMenu()">
                 <i class="fas fa-times"></i>
               </button>
-              <ul>
-                <li class="menu__list"><a href="#about" class="menu__link">About</a></li>
-                <li class="menu__list"><a href="#features" class="menu__link">Blog</a></li>
-                <li class="menu__list"><a href="#pricing" class="menu__link">Pricing</a></li>
-                <li class="menu__list"><a href="#contact" class="menu__link no-cursor">Contact Us</a></li>
-                <li class="menu__list"><a href="#about" class="menu__link">Log In</a></li>
-                <li class="menu__list"><a href="#about" class="nav__link nav__link--primary"></a>Sign Up</a></li>
+              <ul class="menu__links">
+                <li class="menu__list">
+                  <a href="#about" class="menu__link">About</a></li>
+                <li class="menu__list">
+                  <a href="#features" class="menu__link">Blog</a></li>
+                <li class="menu__list">
+                  <a href="#pricing" class="menu__link">Pricing</a></li>
+                <li class="menu__list">
+                  <a href="#contact" class="menu__link no-cursor">Contact Us</a></li>
+                <li class="menu__list">
+                  <a href="#about" class="menu__link">Log In</a></li>
+                <li class="menu__list menu__list">
+                  <a href="#about" class="nav__link nav__link--primary">Sign Up</a></li>
               </ul>
             </div>
         </nav>
