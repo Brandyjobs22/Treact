@@ -373,8 +373,6 @@ position: relative;
     align-items: center;
 }
 
-
-
 .row__features {
     width: 100;
     max-width: 1024px;
@@ -388,7 +386,6 @@ position: relative;
     margin: auto;
     padding-bottom: 60px;
     color: #7c8ba1;
-
 }
 
 .service__img {
@@ -396,10 +393,9 @@ position: relative;
     height: 24px;
 }
 
-.service__text {
+.service__content {
     margin-top: 8px;
     margin-left: 16px;
-   
 }
 
 .service {
@@ -434,8 +430,6 @@ position: relative;
     line-height: 2;
     font-weight: 500;
 }
-
-
 
 .service__title {
     margin: 0 0 0.5rem;
@@ -810,14 +804,10 @@ PRICING
     justify-content: space-between;
 }
 
-.plan:nth-child(1),
-.plan:nth-child(3) {
+.plan:nth-child(1) .personal__middle,
+.plan:nth-child(3) .enterprise__middle {
     border-top: 2px solid rgb(229, 231, 235);
-}    
-
-.plan:nth-child(1),
-.plan:nth-child(3) {
-    border-bottom: 2px solid #243e63;
+    border-bottom: 2px solid rgb(229, 231, 235);
 }
 
 .plan, 
@@ -949,44 +939,19 @@ PRICING
 
 
 
-.personal__middle::before,
-.personal__middle::after,
-.enterprise__middle::before,
-.enterprise__middle::after,
-.business__middle::before,
-.business__middle::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    height: 2px;
-} 
 
-.personal__middle::before,
-.enterprise__middle::before,
-.business__middle::before {
-    top: 0;
-}
 
-.personal__middle::after,
-.enterprise__middle::after,
-.business__middle::after {
-    bottom: 0;
-}
 
-.personal__middle::before,
-.personal__middle::after,
-.enterprise__middle::before,
-.enterprise__middle::after {
-    background: rgb(229, 231, 235);
-}
 
-.business__middle::before {
+
+
+
+
+.plan:nth-child(2)
+.business__middle {
     background: #418ce9;
-}
-
-.business__middle::after {
-    background: #5daad7a8;
+    border-top: 2px solid ;
+    border-bottom: 2px solid
 }
 
 .plan__target,
@@ -1012,6 +977,15 @@ PRICING
     align-items: center;
     font-size: 18px;
     line-height: 48px;
+}
+
+.personsal__bottom,
+.business__bottom,
+.enterprise__bottom {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .plan__button, .plan__button--primary,
