@@ -156,6 +156,41 @@ button {
     color: white;
 }
 
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+    color: #243e63;
+
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color:#1a202c;
+    top: 20px;
+    left: 12px;
+    right: 12px;
+    bottom: 200px;
+    border-radius: 12px;
+    z-index: 100;
+    dispaly: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu__links {
+    
+}
+
+.btn__menu--closed {
+    position: absolute;
+    right: 20px;
+    top: 14px;
+    padding: 8px;
+    color:#243e63;
+}
+
 /* 
 
 LANDING
@@ -666,6 +701,7 @@ PRICING
 
 .pricing__description {
     padding: 32px 40px;
+    
 }
 
 .pricing__small--title {
@@ -695,14 +731,23 @@ PRICING
     display: flex;
     position: relative;
     flex-direction: row;
-    width: 110%;
+    width: 100%;
     justify-content: space-between;
+}
+
+.plan:nth-child(1),
+.plan:nth-child(3) {
+    border-top: 2px solid rgb(229, 231, 235);
+}    
+
+.plan:nth-child(1),
+.plan:nth-child(3) {
+    border-bottom: 2px solid #243e63;
 }
 
 .plan, 
 .business__wrapper {
     position: relative;
-    width: calc(100% / 3);
     max-width: 384px;
     display: flex;
     flex-direction: column;
@@ -819,20 +864,15 @@ PRICING
 .enterprise__middle {
     position: relative;
     display: flex;
-    flex: 1 1 0%;
     flex-direction: column;
     justify-content: center;
-    padding: 32px;
-    
     align-items: center;
+    width: 110%;
+    box-sizing: border-box;
+    padding: 32px 0;
 }
 
-.personal__middle,
-.enterprise__middle,
-.business__middle {
-    margin-left: -32px;
-    margin-right: -32px;
-}
+
 
 .personal__middle::before,
 .personal__middle::after,
