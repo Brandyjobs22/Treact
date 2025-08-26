@@ -174,7 +174,7 @@ button {
     bottom: 200px;
     border-radius: 12px;
     z-index: 100;
-    dispaly: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
