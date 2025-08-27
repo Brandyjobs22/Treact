@@ -763,10 +763,7 @@ PRICING
     align-items: center;
 }
 
-#pricing, .pricing__title {
-    text-align: center;
-    font-size: 48px;
-}
+
 
 .pricing__description {
     padding: 32px 40px;
@@ -778,7 +775,12 @@ PRICING
     color: #6415ff;
     letter-spacing: 1.6px;
     font-weight: 700;
+    text-align: center;
 
+}
+
+.pricing__title {
+    text-align: center;
 }
 
 #pricing .pricing__para {
@@ -798,10 +800,10 @@ PRICING
 
 .plans {
     display: flex;
-    position: relative;
     flex-direction: row;
     width: 100%;
     justify-content: space-between;
+    align-items: stretch;
 }
 
 .plan:nth-child(1) .personal__middle,
@@ -818,13 +820,12 @@ PRICING
     flex-direction: column;
     align-items: center;
     margin-top: 64px;
-    margin-right: 32px;
     border-radius: 8px;
     background-color: rgb(255 255 255);
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-top: 8px;
+    padding: 8px 32px 0 32px;
     text-align: center;
+    flex: 1;
+    margin-right: 16px;
     
 }
 
@@ -874,7 +875,7 @@ PRICING
     flex-direction: column;
     padding-top: 32px;
     padding-bottom: 32px;
-    line-height: 1.625;
+    line-height: 1;
 }
 
 .business__wrapper {
@@ -884,6 +885,8 @@ PRICING
 
 .plan__name {
     font-size: 20px;
+    
+
 }
 
 
@@ -891,25 +894,25 @@ PRICING
 .plan__duration {
     color: #1a202c;
     font-weight: 900;
-    padding-bottom: 9px;
-    line-height: 1.625px;
+    line-height: 1.625;
 }
 
 .business__plan--name {
     color: #f7fafc;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 900;
-    line-height: 1px;
+    line-height: 1;
+    padding-top: 12px;
 }
 
 .plan__price {
     font-size: 48px;
-    margin: 48px 0;
+    margin: 4px 0;
 }
 
 .business__plan--price {
     font-size: 48px;
-    margin-top: 18px;
+    margin: 20px 0 25px 0;
     font-weight: 900;
 }
 
@@ -932,26 +935,21 @@ PRICING
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 110%;
+    width: 100%;
     box-sizing: border-box;
     padding: 32px 0;
 }
 
-
-
-
-
-
-
-
-
-
-
-.plan:nth-child(2)
 .business__middle {
-    background: #418ce9;
-    border-top: 2px solid ;
-    border-bottom: 2px solid
+    margin-top: 8px;
+}
+
+.plan:nth-child(2),
+.business__middle,
+.business__middle--divider,
+.business__bottom--divider {
+    border-top: 2px solid rgb(99, 106, 235);
+    border-bottom: 2px solid rgb(102, 126, 234);
 }
 
 .plan__target,
@@ -959,14 +957,16 @@ PRICING
     font-size: 20px;
     font-weight: 700;
     text-align: center;
-    margin-bottom: 16px;
-    min-height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
     line-height: 1.5;
     letter-spacing: 0.025;
 
+}
+
+.plan__feature {
+    color:#7c8ba1;
 }
 
 .plan__feature,
@@ -979,12 +979,11 @@ PRICING
     line-height: 48px;
 }
 
-.personsal__bottom,
+.personal__bottom,
 .business__bottom,
 .enterprise__bottom {
     padding-left: 64px;
     padding-right: 64px;
-    padding-top: 32px;
     padding-bottom: 32px;
 }
 
@@ -1038,7 +1037,9 @@ PRICING
     opacity: 0.25;
 }
 
+
 /* 
+
 TESTIMONIALS
 
 */
