@@ -140,6 +140,12 @@ button {
     color: #6415ff;
 }
 
+.btn {
+    padding: 12px 32px;
+    border-radius: 500px;
+    font-size: 14px;
+}
+
 
 
 .nav__link--primary,
@@ -262,8 +268,6 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4rem 2rem;
-    padding-top: 100px;
     max-width: 1200px;
     margin: 0 auto;
     gap: 2rem;
@@ -369,17 +373,19 @@ position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
-/*.row__features {
+.row__features {
     width: 100%;
     max-width: 1024px;
     margin: 0 auto;
-}*/
+}
 
 .features__title {
     display: block;
     text-align: center;
+    width: 100%;
     
 }
 
@@ -453,7 +459,9 @@ QUALITY
     align-items: center;
 }
 
-
+#quality .btn {
+    margin-top: 32px;
+}
 
 
 
@@ -469,7 +477,6 @@ QUALITY
 }
 
 .quality__para {
-    padding-bottom: 20px;
     color: #7c8ba1;
 
 }
@@ -766,11 +773,11 @@ VALUES
 
 }
 
-#values .btn__input--primary {
+#values .btn {
     margin-top: 48px;
 }
 
-.btn__input--primary {
+.btn {
     background-color: #6415ff;
     padding:12px 32px;
     border: none;
@@ -1532,6 +1539,10 @@ footer {
         max-width: 512px;
     }
 
+    .trusted__logos--img {
+        padding-right: 64px;
+    }
+
 
 
 
@@ -1588,8 +1599,12 @@ footer {
         font-size: 16px;
     }
 
-    .trusted__text {
+    .trusted__text, .header__right {
         margin-top: 48px;
+    }
+
+    .trusted__logos--img {
+        padding-right: 0px;
     }
 
     
@@ -1613,8 +1628,26 @@ footer {
     max-width: 768px;
    }
 
+   .service__row {
+    padding: 32px 8px;
+    margin: 0 16px;
+   }
+
    .service {
     width: calc(50%);
+   }
+
+   .service__title {
+    line-height: 1;
+   }
+
+   .service__para {
+    max-width: none;
+   }
+
+   .quality__description {
+    margin-right: 0px;
+    padding-right: 40px;
    }
 
    
@@ -1633,6 +1666,8 @@ footer {
     font-size: 16px;
     max-width: 360px;
    }
+
+   
 
 
    .values__title {
@@ -1662,7 +1697,7 @@ footer {
     align-items: center;
    }
 
-   #testimonials .container {
+   #testimonials .contaisner {
     padding-top: 80px;
     padding-bottom: 80px;
    }
@@ -1709,9 +1744,7 @@ footer {
         height: 68px;
     }
 
-    h1 {
-        font-size: 28px;
-    }
+   
 
     h2 {
         font-size: 36px;
@@ -1719,7 +1752,7 @@ footer {
     }
 
     .header__description--para {
-        font-size: 18px;
+        font-size: 16px;
     }
 
 
@@ -1729,14 +1762,14 @@ footer {
     flex: 1 1 100%;
   }
 
-  
-
- 
-
-  
   .trusted__logos {
     justify-content: center;
     flex-wrap: wrap;
+  }
+
+  .service {
+    width: auto;
+    max-width: 384px;
   }
 
   .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
@@ -1787,23 +1820,20 @@ footer {
 
   .quality__para {
     text-align: center;
-    width: 120%;
+    width: 100%;
+    font-size: 14px;
+    max-width: 448px;
   }
 
   .quality__description {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 60px;
   }
-
-  
-
   
   .steps__row {
     display: flex;
     flex-direction: column;
-    
   }
 
   .steps__title {
@@ -1845,6 +1875,10 @@ footer {
   .step__title {
     padding-right: 26px;
     width: 100%;
+  }
+
+  .step__para {
+    margin-right: 24px;
   }
 
 
@@ -1923,4 +1957,78 @@ footer {
     margin-top: 32px;
 
   }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding: 80px 0;
+    }
+
+  .header__contact-form {
+    flex-direction: column;
+    height: auto;
+    margin-left: 30px;
+    }
+
+    .header__email--input {
+        position: static;
+        padding: 16px 0;
+        padding-left: 32px;
+        line-height: 1.5;
+    }
+
+    .btn__input {
+        width: 100%;
+        padding: 16px 0;
+        margin: 16px 0;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+
+    .trusted__text {
+        font-size: 14px;
+        letter-spacing: 0.05em;
+    }
+
+    .features__title, #pricing__title {
+        font-size: 36px;
+    }
+
+    .service__row {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .service__title {
+        letter-spacing: 0.025em;
+        line-height: 1;
+    }
+
+    .service__para {
+        margin-top: 4px;
+        line-height: 2;
+    }
+
+    .quality__title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
+
+    .btn {
+        line-height: 1.5;
+    }
+
+    .steps__title {
+        margin: 16px 0 0 0;
+    }
+
+    .steps__list {
+        margin-top: 48px;
+    }
+
+    .values__title {
+        font-size: 30px;
+        line-height: 1.25;
+    }
 }
