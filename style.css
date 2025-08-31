@@ -371,10 +371,16 @@ position: relative;
     align-items: center;
 }
 
-.row__features {
-    width: 100;
+/*.row__features {
+    width: 100%;
     max-width: 1024px;
     margin: 0 auto;
+}*/
+
+.features__title {
+    display: block;
+    text-align: center;
+    
 }
 
 .features__para {
@@ -628,6 +634,8 @@ VALUES
 }
 
 
+
+
 .value {
     margin-top: 2rem;
     margin-right: 2rem;
@@ -688,6 +696,10 @@ VALUES
 }
 
 .values__list {
+    /*display: flex;
+    justify-content: center;
+    gap: 40px;
+    text-align: center;*/
     margin-left: 0px;
     margin-right: 0px;
     display: flex;
@@ -727,6 +739,7 @@ VALUES
     display: flex;
     align-items: center;
 }
+
 
 
 
@@ -802,6 +815,9 @@ PRICING
 
 .pricing__title {
     text-align: center;
+    margin: 16px 0;
+    line-height: 1.5;
+    letter-spacing: 0.025em;
 }
 
 #pricing .pricing__para {
@@ -1069,22 +1085,35 @@ TESTIMONIALS
 } 
 
 #testimonials .row {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1280px;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+
+    /*display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 40px;
-    padding: 0px;
+    padding: 0px;*/
+}
+
+#testimonials .container {
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .testimonials__img--wrapper {
     flex: 1;
     max-width: 50%;
-    transform: translateY(-10%);
+    transform: translateY(5%);
 }
 
 .testimonials__description {
-    flex: 1;
-    max-width: 50%;
+    padding-left: 64px;
+    max-width: 600px;
 }
 
 .testimonials__img {
@@ -1368,7 +1397,7 @@ footer {
     margin-top: 48px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     z-index: 2;
 }
 
@@ -1524,10 +1553,12 @@ footer {
 /* LAPTOPS */
 
 @media (max-width: 1024px) {
-
-    .row {
-        flex-direction: column;
+   
+    .quality__description, .quality__img--wrapper, .steps__description, .steps__img--wrapper, .values__description, .values__img, .testimonials__description, .testimonials__img {
+    width: 100%;
+    max-width: 448px;
     }
+
     .nav__link, .nav__link--primary {
         display: none;
     }
@@ -1564,11 +1595,18 @@ footer {
     
 
    h2 {
-    font-size: 48px;
+    font-size: 36px;
    }
 
    .features__para {
     font-size: 16px;
+   }
+
+   .features__title {
+    
+    width: 100%;
+    text-align: center;
+    max-width: none;
    }
 
    .service__list {
@@ -1583,7 +1621,7 @@ footer {
 
    .quality__description, 
    .quality__img--wrapper {
-    margin-right: 0px;
+    margin-right: 32px;
    }
 
    .quality__title {
@@ -1593,6 +1631,20 @@ footer {
 
    .quality__para {
     font-size: 16px;
+    max-width: 360px;
+   }
+
+
+   .values__title {
+    font-size: 36px;
+   }
+
+   .values__para {
+    font-size: 16px;
+   }
+
+   .value__para {
+    max-width: 260px;
    }
 
    .values__list {
@@ -1600,14 +1652,48 @@ footer {
     flex-direction: column;
    }
 
-   
+   #pricing__title, .features__title {
+    font-size: 48px;
+   }
 
    .plans {
     display: flex;
     flex-direction: column;
     align-items: center;
    }
+
+   #testimonials .container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+   }
+
+   .testimonials__header {
+    font-size: 36px;
+   }
+
+   .testimonials__para {
+    font-size: 16px;
+   }
    
+   .testimonials__description {
+    padding-left: 48px;
+    max-width: 500px;
+   }
+
+   .contact__row {
+    flex-direction: column;
+   }
+
+   .contact__title {
+    text-align: center;
+    width: 100%;
+    max-width: 512px;
+   }
+
+   .start__buttons {
+    width: auto;
+    margin-top: 24px;
+   }
    
 
    
@@ -1668,7 +1754,14 @@ footer {
   .features__row {
     display: flex;
     flex-direction: column;
+
   }
+    
+  .features__para {
+    font-size: 14px;
+ } 
+
+
 
   .service__list {
     display: flex;
@@ -1774,6 +1867,7 @@ footer {
 
   .values__list {
     flex-direction: column;
+    align-items: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -1785,23 +1879,48 @@ footer {
     align-items: center;
    }
 
-   /*.value:nth-of-type(1) {
-    margin-right: 48px;
-
+   .pricing__title {
+    font-size: 48px;
    }
+
+   .pricing__para {
+    font-size: 14px;
+   }
+
+
 
   
 
+  
 
+  #testimonials .row {
+    flex-direction: column;
+  }
 
-  .plans {
-    display: flex;
+  .testimonials__para {
+    font-size: 14px;
+  }
+
+  .testimonial__para {
+    font-size: 16px
+  }
+
+  .footer__columns {
+    justify-content: flex-start;
+  }
+
+  .footer__column {
+    width: calc(100% / 3);
+    
+  }
+
+  .footer__bottom {
     flex-direction: column;
     align-items: center;
   }
 
-  .testimonials__row {
-    display: flex;
-    flex-direction: column;
+  .footer__copyright, .footer__socials {
+    margin-top: 32px;
+
   }
 }
